@@ -1,0 +1,6 @@
+.body {
+  background: rgb(70, 58, 180);
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  height: 100vh;
+}

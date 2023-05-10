@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './Components/Home/Home';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Components/Home/Layout';
+import Contact from './Components/Home/Contact';
+import About from './Components/Home/About';
+import Play from './Components/Playhome/Play'
+import NotFound from './Components/Home/NotFound';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Layout children={<Home/>}/>} />
+      <Route path="/about" element={<Layout children={<About/>}/>} />
+      <Route path="/contact" element={<Layout children={<Contact/>}/>} />
+      <Route path="/:game" element={<Play/>} />
+      <Route path="*" element={<Play children={<NotFound/>}/>}/>
+    </Routes>
+  )
 }
 
-export default App;
+export default App
