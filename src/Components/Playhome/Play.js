@@ -8,6 +8,7 @@ import Simon from "../Simon/Simon";
 
 import NotFound from "../Home/NotFound";
 import { useParams } from "react-router-dom";
+import DotnCon from "../DotandCon/DotnCon";
 
 const Play = () => {
   const {game} = useParams();
@@ -27,6 +28,8 @@ const Play = () => {
               return <RockPaper/>
             case 'Simon':
               return <Simon/>
+            case 'DotnCon':
+              return <DotnCon/>
             default:
               return <NotFound/>
           }

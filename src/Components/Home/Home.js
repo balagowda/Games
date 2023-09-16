@@ -6,66 +6,66 @@ const Home = () => {
   return (
     <div className="main">
       <div className="align-middle">
-
-        <Link to="/TicTocToy" >
-          <div className="card p-1 m-3">
-            <div className="card-body d-flex">
-              <div className="no fs-3">TIC TOC TOY</div>
-
-              <div className="ms-auto ">
-                <i className="bi bi-arrow-right bi-5x"></i>
+        
+        <div className="outer-div">
+          <Link to="/TicTocToy" className="lnk">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="no fs-3">TIC TOC TOY</div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
-        <Link to="/GuessNum" >
-          <div className="card p-1 m-3">
-            <div className="card-body d-flex">
-              <div className="no fs-3">Guess The Number</div>
-
-              <div className="ms-auto ">
-                <i className="bi bi-arrow-right bi-5x"></i>
+        <div className="outer-div">
+          <Link to="/GuessNum" className="lnk">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="no fs-3">Guess The Number</div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
-        <Link to="/Connect4" >
-          <div className="card p-1 m-3">
-            <div className="card-body d-flex">
-              <div className="no fs-3">Connect Four</div>
-
-              <div className="ms-auto ">
-                <i className="bi bi-arrow-right bi-5x"></i>
+        <div className="outer-div">
+          <Link to="/Connect4" className="lnk">
+            <div className="card ">
+              <div className="card-body d-flex">
+                <div className="no fs-3">Connect Four</div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
-        <Link to="/RockPaper" >
-          <div className="card p-1 m-3">
-            <div className="card-body d-flex">
-              <div className="no fs-3">Rock Paper Scissors</div>
-
-              <div className="ms-auto ">
-                <i className="bi bi-arrow-right bi-5x"></i>
+        <div className="outer-div">
+          <Link to="/RockPaper" className="lnk">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="no fs-3">Rock Paper Scissors</div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
-        <Link to="/Simon" >
-          <div className="card p-1 m-3">
-            <div className="card-body d-flex">
-            <div className="no fs-3">Simon</div>
-
-              <div className="ms-auto ">
-                <i className="bi bi-arrow-right bi-5x"></i>
+        <div className="outer-div">
+          <Link to="/Simon" className="lnk">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="no fs-3">Simon</div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
+
+        <div className="outer-div">
+          <Link to="/DotnCon" className="lnk">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="no fs-3">Dots and Boxes</div>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
