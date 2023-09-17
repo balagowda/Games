@@ -8,13 +8,14 @@
   width: 80vw;
   height: 600px;
   position: absolute;
-  background: inherit;
+  /* background: inherit; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 /*          info styling            */

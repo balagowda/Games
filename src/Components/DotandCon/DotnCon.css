@@ -2,60 +2,42 @@
   width: 80vw;
   height: 600px;
   position: absolute;
-  background: inherit;
+  /* background: inherit; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
-.app {
+.dot-and-con-game {
   text-align: center;
+  margin-top: 20px;
 }
 
-.grid {
-  display: inline-block;
-  margin-top: 20px;
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px); /* Added grid rows */
+  gap: 4px;
+  margin-top: 10px;
+  width: 400px; /* Added width for better visualization */
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.line {
-  width: 40px;
-  height: 10px;
-  background-color: black;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.line.horizontal {
-  margin-right: -30px;
-  margin-left: -10px;
-}
-
-.line.vertical {
-  margin-top: -30px;
-  margin-bottom: -10px;
-}
-
-.line.completed {
-  background-color: red;
-}
-
-.empty-space {
   width: 40px;
   height: 40px;
-  display: inline-block;
+  background-color: lightblue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
-.current-player {
-  margin-top: 20px;
+.dot.connected {
+  background-color: green;
+  color: white;
 }
